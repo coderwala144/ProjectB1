@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style2.css">
+    <title>contact</title>
+</head>
+
+<body>
+    <div class="container-lg">
+        <div class="box1" id="b1">
+            <h2>contact</h2>
+        </div>
+    </div>
+
+    <!--Contact sec-->
+    <section id="contact-info" class="info-section">
+        <h2>📞 Get in Touch</h2>
+        <div class="contact-details">
+            <p><strong>Email:</strong> <a
+                    href="harshbgaikwad55@gmail.com / shaafinkothiwale@gmail.com">harshbgaikwad55@gmail.com /
+                    shaafinkothiwale@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+91 8999190251">89xxxxxxxx</a></p>
+            <p><strong>Address:</strong> Line Bazaar, Kasba Bawda, Kolhapur</p>
+        </div>
+    </section>
+    <div class="container mt-5" id="contact1">
+        <h2 class="text-center">Contact Us</h2>
+        <form id="contactForm" class="mt-4">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+            </div>
+            <button type="submit" class="bt21">Send Message</button>
+        </form>
+        <div id="successMessage" class="alert alert-success mt-3 d-none">
+            Your message has been sent successfully!
+        </div>
+    </div> <br><br><br>
+    <!-- Bottom Navigation Bar-->
+    <nav class="navbar navbar-expand navbar-dark fixed-bottom" style="background-color: black;">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html"><i class="fas fa-home"></i> </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="deseases.html"><i class="fa-sharp fa-solid fa-square-virus"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="govt.html"><i class="fa-solid fa-money-bill-wheat"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html"><i class="fas fa-phone"></i></a>
+            </li>
+        </ul>
+    </nav>
+</body>
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        // Display success message
+        const successMessage = document.getElementById("successMessage");
+        successMessage.classList.remove("d-none");
+
+        // Clear the form
+        document.getElementById("contactForm").reset();
+    });
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"
+    integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+"
+    crossorigin="anonymous"></script>
+
+</html>
